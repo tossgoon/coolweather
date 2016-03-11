@@ -14,7 +14,7 @@ public class CoolWeatherDB {
 	/**
 	 * 数据库名
 	 */
-	public static final String DB_NAME = "cool_weather";
+	public static final String DB_NAME = "cool_weather2";
 	/**
 	 * 数据库版本
 	 */
@@ -65,7 +65,6 @@ public class CoolWeatherDB {
 				province.setProvinceName(cursor.getString(cursor.getColumnIndex("province_name")));
 				province.setProvinceCode(cursor.getString(cursor.getColumnIndex("province_code")));
 				list.add(province);
-
 			} while (cursor.moveToNext());
 		}
 		return list;
